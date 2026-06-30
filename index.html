@@ -117,6 +117,7 @@
  <body class="bg-grid">
   <div id="app">
     
+    <!-- HEADER -->
     <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3 group">
@@ -126,9 +127,9 @@
           <span class="text-xl font-bold tracking-tight text-white">DeLima<span class="text-blue-500">Tec</span></span>
         </a>
         <nav class="hidden md:flex items-center gap-8">
-          <a href="#about" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Sobre</a>
           <a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Serviços</a>
-          <a href="#tech" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Tecnologias</a>
+          <a href="#cases" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Resultados</a>
+          <a href="#reviews" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Depoimentos</a>
           <a href="#contact" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Contato</a>
           <button onclick="openWhatsApp()" class="bg-green-600/10 hover:bg-green-600/20 text-green-500 border border-green-500/30 px-5 py-2 rounded-full text-sm font-semibold transition-all">
             WhatsApp
@@ -138,15 +139,16 @@
       </div>
     </header>
 
+    <!-- MOBILE MENU -->
     <div id="mobile-menu" class="fixed inset-0 z-[60] bg-slate-950 flex flex-col p-6 hidden-menu md:hidden">
       <div class="flex justify-between items-center mb-12">
         <span class="text-xl font-bold">Menu</span>
         <button id="menu-close" class="text-slate-300"><i data-lucide="x"></i></button>
       </div>
       <nav class="flex flex-col gap-6 text-2xl font-semibold">
-        <a href="#about" class="mobile-link">Sobre</a>
         <a href="#services" class="mobile-link">Serviços</a>
-        <a href="#tech" class="mobile-link">Tecnologias</a>
+        <a href="#cases" class="mobile-link">Resultados</a>
+        <a href="#reviews" class="mobile-link">Depoimentos</a>
         <a href="#contact" class="mobile-link">Contato</a>
       </nav>
       <div class="mt-auto">
@@ -155,6 +157,8 @@
     </div>
 
     <main class="flex-1">
+      
+      <!-- HERO SECTION -->
       <section class="hero-section py-20 lg:py-32 px-4">
         <div class="glow glow-1"></div>
         <div class="glow glow-2"></div>
@@ -222,6 +226,7 @@
         </div>
       </section>
 
+      <!-- SEÇÃO DE SERVIÇOS -->
       <section id="services" class="py-24 px-4">
         <div class="max-w-7xl mx-auto">
           <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal">
@@ -241,7 +246,7 @@
               <p class="text-slate-400 text-sm leading-relaxed mb-6">Gestão completa do seu Google Meu Negócio. Apareça no topo das buscas locais e atraia mais clientes.</p>
               <ul class="space-y-2 text-xs text-slate-500">
                 <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-blue-500"></i> Otimização SEO Local</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-blue-500"></i> Respostas Humanizadas</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-blue-500"></i> Respostas Humanizadas (IA)</li>
               </ul>
             </div>
 
@@ -251,7 +256,7 @@
               <p class="text-slate-400 text-sm leading-relaxed mb-6">Atendimento remoto e presencial para usuários, sistemas e hardware com SLA rigoroso.</p>
               <ul class="space-y-2 text-xs text-slate-500">
                 <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-blue-500"></i> Manutenção Preventiva</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-blue-500"></i> Help Desk Nível 1 ao 3</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" size="14" class="text-blue-500"></i> Help Desk Eficiente</li>
               </ul>
             </div>
             
@@ -298,6 +303,155 @@
         </div>
       </section>
 
+      <!-- NOVA SEÇÃO: ANTES E DEPOIS (MAPS) -->
+      <section id="cases" class="py-24 px-4 bg-slate-900/30 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-6">
+                O Poder do Google Maps
+              </div>
+              <h2 class="text-3xl md:text-5xl font-bold mb-6">Do anonimato ao topo das buscas locais</h2>
+              <p class="text-lg text-slate-400 mb-8">
+                Veja o impacto real que o nosso pacote de <strong>Presença Digital</strong> gera em um negócio local após apenas 30 dias de otimização contínua.
+              </p>
+              <ul class="space-y-5">
+                <li class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400"><i data-lucide="trending-up" size="20"></i></div>
+                  <span class="text-slate-300">Aumento no número de ligações e rotas traçadas</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400"><i data-lucide="map-pin" size="20"></i></div>
+                  <span class="text-slate-300">Posicionamento acima dos concorrentes do bairro</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400"><i data-lucide="star" size="20"></i></div>
+                  <span class="text-slate-300">Autoridade gerada por avaliações 5 estrelas ativas</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- DASHBOARD DE COMPARAÇÃO (MOCKUP CSS) -->
+            <div class="relative reveal" style="animation-delay: 0.2s;">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 blur-[80px] rounded-full"></div>
+              
+              <div class="grid sm:grid-cols-2 gap-4 relative">
+                <!-- Card Antes -->
+                <div class="glass-card p-6 rounded-2xl border-red-500/30 bg-slate-950/80">
+                  <div class="text-red-400 font-black mb-6 flex items-center gap-2">
+                    <i data-lucide="x-circle" size="20"></i> COMO ESTAVA (ANTES)
+                  </div>
+                  <div class="space-y-4">
+                    <div class="border-b border-slate-800 pb-3">
+                      <span class="block text-slate-500 text-xs uppercase tracking-wider mb-1">Acessos no Perfil / mês</span>
+                      <span class="text-2xl font-mono text-white">124 visitas</span>
+                    </div>
+                    <div class="border-b border-slate-800 pb-3">
+                      <span class="block text-slate-500 text-xs uppercase tracking-wider mb-1">Nota Média</span>
+                      <span class="text-2xl font-mono text-red-400 flex items-center gap-2">
+                        3.2 <div class="flex"><i data-lucide="star" size="16" class="fill-current"></i></div>
+                      </span>
+                    </div>
+                    <div>
+                      <span class="block text-slate-500 text-xs uppercase tracking-wider mb-1">Posição na Busca Local</span>
+                      <span class="text-lg font-mono text-slate-300">14º Lugar (Invisível)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card Depois -->
+                <div class="glass-card p-6 rounded-2xl border-green-500/50 bg-slate-900/90 relative transform sm:scale-110 shadow-2xl shadow-green-500/10 z-10">
+                  <div class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-black px-3 py-1 rounded-bl-lg">EM 30 DIAS</div>
+                  <div class="text-green-400 font-black mb-6 flex items-center gap-2">
+                    <i data-lucide="check-circle-2" size="20"></i> DEPOIS (DELIMATEC)
+                  </div>
+                  <div class="space-y-4">
+                    <div class="border-b border-slate-700 pb-3">
+                      <span class="block text-slate-400 text-xs uppercase tracking-wider mb-1">Acessos no Perfil / mês</span>
+                      <span class="text-3xl font-mono text-green-400 font-bold">+1.840 visitas</span>
+                    </div>
+                    <div class="border-b border-slate-700 pb-3">
+                      <span class="block text-slate-400 text-xs uppercase tracking-wider mb-1">Nota Média</span>
+                      <span class="text-3xl font-mono text-yellow-400 flex items-center gap-2">
+                        4.9 <div class="flex"><i data-lucide="star" size="20" class="fill-current"></i></div>
+                      </span>
+                    </div>
+                    <div>
+                      <span class="block text-slate-400 text-xs uppercase tracking-wider mb-1">Posição na Busca Local</span>
+                      <span class="text-xl font-mono text-green-400 font-bold">Top 3 (Primeira Página)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOVA SEÇÃO: DEPOIMENTOS (SOCIAL PROOF) -->
+      <section id="reviews" class="py-24 px-4 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">O que dizem nossos clientes</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Histórias reais de pequenos negócios que transformaram sua tecnologia e vendas com a DeLimaTec.</p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Review 1 -->
+            <div class="glass-card p-8 rounded-3xl reveal" style="animation-delay: 0.1s;">
+              <div class="flex text-yellow-400 mb-6 gap-1">
+                <i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i>
+              </div>
+              <p class="text-slate-300 mb-8 italic text-sm leading-relaxed">
+                "Eu achava que o movimento estava fraco por causa da crise. A DeLimaTec me mostrou que meu Google Maps estava abandonado. Fechamos o Combo e, além de atrair muito mais clientes na loja, hoje meu Wi-Fi e meus computadores nunca mais travaram no caixa."
+              </p>
+              <div class="flex items-center gap-4 mt-auto">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400 font-bold text-lg">CP</div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Carlos Pereira</h4>
+                  <p class="text-xs text-slate-400">Proprietário de Padaria</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="glass-card p-8 rounded-3xl reveal" style="animation-delay: 0.2s;">
+              <div class="flex text-yellow-400 mb-6 gap-1">
+                <i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i>
+              </div>
+              <p class="text-slate-300 mb-8 italic text-sm leading-relaxed">
+                "Como dentista, meu foco é o paciente. Terceirizar a T.I. com a DeLimaTec foi a melhor decisão. Eles cuidam da rede da clínica e, de quebra, otimizaram nosso perfil online. O número de ligações agendando avaliação triplicou no último mês!"
+              </p>
+              <div class="flex items-center gap-4 mt-auto">
+                <div class="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center text-cyan-400 font-bold text-lg">MA</div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Dra. Mariana Alves</h4>
+                  <p class="text-xs text-slate-400">Gestora de Clínica Odontológica</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="glass-card p-8 rounded-3xl reveal" style="animation-delay: 0.3s;">
+              <div class="flex text-yellow-400 mb-6 gap-1">
+                <i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i><i data-lucide="star" size="18" class="fill-current"></i>
+              </div>
+              <p class="text-slate-300 mb-8 italic text-sm leading-relaxed">
+                "Contratei inicialmente só pelo pacote de Presença Digital. Fiquei tão impressionado com as artes e as respostas automáticas aos clientes no Google que acabei contratando o suporte de T.I. para a rede da oficina. Recomendo de olhos fechados."
+              </p>
+              <div class="flex items-center gap-4 mt-auto">
+                <div class="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center text-indigo-400 font-bold text-lg">RS</div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Roberto Souza</h4>
+                  <p class="text-xs text-slate-400">Dono de Centro Automotivo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO CONTATO (FORMULÁRIO INBOUND) -->
       <section id="contact" class="py-24 px-4 bg-slate-900/30 border-t border-slate-800">
         <div class="max-w-7xl mx-auto">
           <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -345,6 +499,7 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="bg-slate-950 border-t border-slate-800/50 py-12 px-4">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div class="flex items-center gap-3">
@@ -412,7 +567,7 @@
           telefone: whats,
           nicho: "Captado via Site",
           necessidade_cliente: necessidade,
-          status_agencia: "scouted", // Isso faz com que a IA faça o diagnóstico dele automaticamente no SaaS!
+          status_agencia: "scouted",
           diagnostico_ia: `⚠️ Lead Inbound (Veio do Site). Pedido focado em: ${necessidade}`,
           nota_atual: "Avaliar",
           total_avaliacoes: "Avaliar",
